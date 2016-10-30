@@ -10,6 +10,7 @@ img, embed, object, video {
 .text-thin{
 	font-family: 'Raleway', sans-serif; 
 	font-weight: 200;
+
 }
 
 .text-md{
@@ -23,4 +24,127 @@ img, embed, object, video {
 
 hr{
 	height: 20px;
+}
+
+.nav-top{
+	margin-top: 30px;
+	float: right;
+}
+
+.nav-top-items{
+	text-transform: uppercase;
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+}
+.nav-item{
+	display: inline-block;
+	padding: 1em 1.5em;
+}
+
+.nav-item > a{
+	color: #7c7c7c;
+	text-decoration: none;
+}
+
+.active{
+	background-color: #e8e8e8;
+}
+
+.active > a{
+	color: black;
+	text-decoration: none;
+}
+.thumbnail-row{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hamburger{
+	display: none;
+}
+
+.nav-mobile{
+	
+}
+
+@media screen and (min-width: 551px) and (max-width: 991px){
+	
+	.header-1{
+		width: 40%;
+		float: left;
+	}
+	
+	.header-2{
+		width: 60%;
+		float: right;
+	}
+
+	.nav-top{
+		float: none;
+	}
+	
+	.nav-item{
+		font-size: .9em;
+		padding: 0.67em 1em;
+	}
+	
+	.about{
+		width: 75%;
+		margin: auto;
+	}
+	
+	.thumbnail-row{
+		display: flex;
+		flex-wrap:wrap;
+	}
+	
+	.thumbnail{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 725px){
+	.hamburger{
+		display: inline-block;
+		margin: auto;
+		padding: 1em;
+		float: right;
+		width: 33%;
+	}
+	
+	.hamburger-icon{
+		float: right;
+		margin-top: 30px;
+	}
+	
+	.header-1{
+		width: 66%;
+		float: left;
+	}
+	
+	.header-2{
+		display: none;
+	}
+	.nav-mobile{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.thumbnail{
+		max-width: 75%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.thumbnail-row > h2{
+		font-size: 1.75em;
+	}
+	
+	.thumbnail > h3{
+		font-size: 1.17em;
+	}
 }

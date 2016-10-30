@@ -10,64 +10,118 @@
 	
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/e9d6741f36.js"></script>
+	<script>
+		$('button').click(function() {
+			$(this).toggleClass('expanded').siblings('div').slideToggle();
+		});
+	</script>
+	
+	<title>Kieran Davis</title>
 </head>
 <body class="container">
+	<!--Header-->
 	<div class="row">
-		<div class="col-md-6" >
-			<img src="" alt="Kieran Logo">
-		</div>
-		<div class="col-md-6 text-uppercase text-right">
+		<div class="col-md-4 text-uppercase text-left header-1">
 			<h1 class="text-thin">Kieran Davis</h1>
 			<h5>Innovator | Technologist</h5>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<hr>
-			</div>
+		<!--Navigation -->
+		<div class="col-md-8 header-2">
+			<nav class="nav-top">
+				<div class="container-fluid">
+					<ul class="nav-top-items">
+						<li class="nav-item active">
+							<a href="index.html">Who?</a>
+						</li>
+						<li class="nav-item">
+							<a href="work.html">Work</a>
+						</li>
+						<li class="nav-item">
+							<a href="resume.html">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://www.linkedin.com/in/kieran-davis-459b9a5b">LinkedIn</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://github.com/davisk4rpi">Github</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="hamburger dropdown">
+			<nav class="nav-mobile">
+				<button><i class="fa fa-bars fa-4x" aria-hidden="true"></i></button>			
+				<ul class="">
+					<li class="nav-item active">
+						<a href="index.html">Who?</a>
+					</li>
+					<li class="nav-item">
+						<a href="work.html">Work</a>
+					</li>
+					<li class="nav-item">
+						<a href="resume.html">Resume</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.linkedin.com/in/kieran-davis-459b9a5b">LinkedIn</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://github.com/davisk4rpi">Github</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<img src="images/DSC_0166.JPG" alt="This is a picture of me" class="img-responsive"> 
+			<hr>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row flex-row">
+		<div class="col-md-6 about">
+			<img src="images/DSC_0166.JPG" alt="This is a picture of me" class="img-responsive"> 
+		</div>
+		<div class="col-md-6 about">
+			<h2>Who Am I?</h2>
+			<p>
+				I am a strategic and innovative problem solver actively looking for work as a 
+				Front-End Software Developer or Product Manager. I am presently employed in a 
+				multi-functional role by Boeing Research & Technology. We design and develop 
+				cutting edge manufacturing technology for composite materials. 
+			</p>
+			<p>
+				I am formally educated in Mechanical & Materials Engineering, Economics, 
+				and User-Centered Design. This has contributed to my diverse skills set but 
+				I am still constantly expanding my repertoire.
+			</p>
+			<h3>
+				Contact
+			</h3>
+			<p>
+				davisk4rpi@gmail.com
+			</p>
+		</div>
+	</div>
+	<div class="row thumbnail-row">
 		<h2 class="text-muted text-md">Featured Work</h2>
 	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<img src="images/laud_social_logo.png" alt="Laud Social Logo" class="img-responsive">
+	<div class="row thumbnail-row">
+		<div class="col-md-4 thumbnail">
+			<img src="images/laud_social/laud_social_logo.png" alt="Laud Social Logo" class="img-responsive">
 			<h3 class="text-md">Laud Social</h3>
 			<p>Website:  <a href="http://www.laudsocial.com/">http://www.laudsocial.com/</a></p>
 		</div>
-		<div class="col-md-4">
-			<img src="images/UW_logo_1200x1200.png" alt="University of Washington Logo" class="img-responsive" data-toggle="modal" data-target="#project1">
+		<div class="col-md-4 thumbnail">
+			<img src="images/registrar/UW_logo_1200x1200.png" alt="University of Washington Logo" class="img-responsive">
 			<h3 class="text-md">University of Washington Registrar</h3>
-			<p>HTML Prototype: <a href="http://davisk4rpi.github.io/uw_registrar/index.html">http://davisk4rpi.github.io/uw_registrar/index.html</a></p>
+			<p>HTML Prototype: <a href="http://bit.ly/2dGW7M0">http://bit.ly/2dGW7M0</a></p>
 		</div>
-		<div class="col-md-4">
-			<img src="images/boeing_logo.png" alt="Boeing Co. Logo" class="img-responsive">
+		<div class="col-md-4 thumbnail">
+			<img src="images/boeing/boeing_logo.png" alt="Boeing Co. Logo" class="img-responsive">
 			<h3 class="text-md">Boeing Research & Technology</h3>
 			<p>Website <a href="http://www.boeing.com/">http://www.boeing.com/</a></p>
 		</div>
 	</div>
-	
-	    <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/UW_logo_1200x1200.png">
-                    This was my first project in this class. I learned a lot about HTML and CSS.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
